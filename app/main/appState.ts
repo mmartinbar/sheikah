@@ -1,5 +1,5 @@
 import { AppState } from "app/common/runtimeTypes/ipc/state"
-import { CURRENT_WALLETS_VERSION } from "app/common/runtimeTypes/storage/wallets"
+import { CURRENT_WALLETS_VERSION } from "app/common/runtimeTypes/storage"
 
 /**
  * An AppstateManager maintains app state and manages its access and update.

@@ -1,6 +1,7 @@
 import { SaveWalletAction } from "app/renderer/actions/actionTypes"
-import { Wallet, CURRENT_WALLET_VERSION } from "app/common/runtimeTypes/storage/wallets"
+import { Wallet } from "app/common/runtimeTypes/storage/wallets"
 import { WalletOption } from "app/renderer/store"
+import { CURRENT_WALLET_VERSION } from "app/common/runtimeTypes/storage"
 
 // Empty state
 export const emptyState: WalletOption = false

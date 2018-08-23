@@ -17,9 +17,9 @@ import {
   Wip3SeedInfo,
   KeyPath,
   KeyChain,
-  Account,
-  CURRENT_WALLET_VERSION
+  Account
 } from "app/common/runtimeTypes/storage/wallets"
+import { CURRENT_WALLET_VERSION } from "app/common/runtimeTypes/storage"
 import * as AccountFactory from "app/common/factories/account"
 import { JsonSerializable } from "app/common/serializers"
 import * as t from "io-ts"

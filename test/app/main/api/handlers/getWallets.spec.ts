@@ -1,7 +1,8 @@
 import { asRuntimeType } from "app/common/runtimeTypes"
 import { getWallets } from "app/main/api/handlers"
-import { Wallets, CURRENT_WALLETS_VERSION } from "app/common/runtimeTypes/storage/wallets"
+import { Wallets } from "app/common/runtimeTypes/storage/wallets"
 import { AppStateManager } from "app/main/appState"
+import { CURRENT_WALLETS_VERSION } from "app/common/runtimeTypes/storage"
 
 describe("GetWallets Handler", () => {
 

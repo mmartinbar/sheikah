@@ -102,12 +102,12 @@ function generateFinalKey(parentPath: Array<number>, index: number): FinalKey {
       187, 192, 191, 147, 91, 108, 192, 174, 214, 251, 100, 79])
   const extendedKey = { type: ("public" as "public"), key, chainCode }
   const keyPath = [...parentPath, index]
-  const pkh = ""
-  const value = 30
-  const outpoint = { txid: "some tx id", index: 0 }
-  const output = { type: ("P2PKH" as "P2PKH"), outpoint, value }
-  const utxo = [output]
-  const stxo = [{}]
+  const pkh = keyPath.toString()
+  const utxoOutpoint = { txid: "some tx id", index: 0 }
+  const utxo = { outpoint: utxoOutpoint, internal: false }
+  const stxoOutpoint = { txid: "some other tx id", index: 1 }
+  const utxos = [utxo]
+  const stxos = [stxoOutpoint]
 
-  return { extendedKey, keyPath, pkh, utxo, stxo }
+  return { extendedKey, keyPath, pkh, utxos, stxos }
 }

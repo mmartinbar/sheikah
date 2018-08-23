@@ -4,7 +4,7 @@ import { jsonSerializer } from "test/__stubs__/serializers"
 import * as api from "app/renderer/api"
 import { routes } from "app/main/api"
 import { GetWalletSuccess, GetWalletResponse } from "app/common/runtimeTypes/ipc/wallets"
-import { CURRENT_WALLET_VERSION } from "app/common/runtimeTypes/storage/wallets"
+import { CURRENT_WALLET_VERSION } from "app/common/runtimeTypes/storage"
 
 describe("GetWallet API", () => {
   const getWalletParams = {

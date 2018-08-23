@@ -1,5 +1,5 @@
 import { Cipher } from "app/main/ciphers/index"
-import { Wallet, CURRENT_WALLET_VERSION, Seed } from "app/common/runtimeTypes/storage/wallets"
+import { Wallet, Seed } from "app/common/runtimeTypes/storage/wallets"
 import { EncryptWalletParams } from "app/common/runtimeTypes/ipc/wallets"
 import { WalletStorage } from "app/main/subsystems/wallets"
 import { JsonSerializable } from "app/common/serializers/json"
@@ -13,6 +13,7 @@ import { AppStateS, WalletStorageS, AppStorageS } from "app/main/system"
 import { fromMnemonics } from "app/main/crypto/seed"
 import * as crypto from "crypto"
 import { PlainCipher } from "app/main/ciphers/plain"
+import { CURRENT_WALLET_VERSION } from "app/common/runtimeTypes/storage"
 
 export const walletParams: EncryptWalletParams = {
   caption: "Hello World",

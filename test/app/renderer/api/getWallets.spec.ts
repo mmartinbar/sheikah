@@ -4,7 +4,7 @@ import { ipcRendererFactory } from "test/__stubs__/ipcRenderer"
 import { jsonSerializer } from "test/__stubs__/serializers"
 import * as api from "app/renderer/api"
 import { routes } from "app/main/api"
-import { CURRENT_WALLETS_VERSION } from "app/common/runtimeTypes/storage/wallets"
+import { CURRENT_WALLETS_VERSION } from "app/common/runtimeTypes/storage"
 
 describe("GetWallets API", () => {
   const wallets = {

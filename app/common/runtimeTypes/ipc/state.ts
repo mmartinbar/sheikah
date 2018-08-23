@@ -14,6 +14,7 @@ export const AppState = t.intersection([
 ], "AppState")
 export type AppState = t.TypeOf<typeof AppState>
 
+// Types for the getState handler
 export const GetStateParams = t.type({})
 export type GetStateParams = t.TypeOf<typeof GetStateParams>
 

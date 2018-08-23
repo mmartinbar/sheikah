@@ -3,12 +3,14 @@ import { Empty } from "app/common/runtimeTypes/index"
 import { Wallets, Wallet } from "app/common/runtimeTypes/storage/wallets"
 import * as t from "io-ts"
 
+// Types for the getWallets handler
 export const GetWalletsParams = Empty
 export type GetWalletsParams = t.TypeOf<typeof GetWalletsParams>
 
 export const GetWalletsResponse = Wallets
 export type GetWalletsResponse = t.TypeOf<typeof GetWalletsResponse>
 
+// Types for the importSeed handler
 export const ImportSeedParams = t.taggedUnion(
   "kind",
   [
@@ -50,6 +52,7 @@ export const ImportSeedResponse = t.taggedUnion("kind", [
 ], "ImportSeedResponse")
 export type ImportSeedResponse = t.TypeOf<typeof ImportSeedResponse>
 
+// Types for the getWallet handler
 export const GetWalletParams = t.type({
   id: t.string,
   password: t.string
@@ -89,6 +92,7 @@ export function buildGetWalletError(error: t.LiteralType<GetWalletErrors>) {
   return walletError
 }
 
+// Types for the encryptWallet handler
 export const EncryptWalletParams = t.intersection([
   t.type({
     password: t.string
