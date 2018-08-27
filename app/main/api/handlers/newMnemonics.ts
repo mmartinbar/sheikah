@@ -4,9 +4,9 @@ import { asObject } from "app/common/runtimeTypes"
 import { inject } from "app/main/utils/utils"
 import { AppStateS } from "app/main/system"
 import {
-  NewMnemonicsResponse, Mnemonics, NewMnemonicsErrors, newMnemonicsErrors, NewMnemonicsSuccess,
-  NewMnemonicsError
-} from "app/common/runtimeTypes/storage/wallets"
+  NewMnemonicsResponse, Mnemonics, NewMnemonicsErrors,
+  newMnemonicsErrors, NewMnemonicsSuccess, NewMnemonicsError
+} from "app/common/runtimeTypes/ipc/seed"
 import * as mnemonic from "app/main/crypto/mnemonic"
 import { JsonSerializable } from "app/common/serializers"
 

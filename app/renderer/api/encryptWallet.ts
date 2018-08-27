@@ -1,4 +1,4 @@
-import { EncryptWalletParams, EncryptWalletResponse } from "app/common/runtimeTypes/ipc/wallets"
+import { EncryptWalletParams, EncryptWalletResponse } from "app/common/runtimeTypes/ipc/wallet"
 import { Client } from "app/renderer/api"
 
 /**

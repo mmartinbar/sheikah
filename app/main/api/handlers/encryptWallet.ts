@@ -5,7 +5,7 @@ import {
   EncryptWalletResponse,
   encryptWalletErrors,
   EncryptWalletError
-} from "app/common/runtimeTypes/ipc/wallets"
+} from "app/common/runtimeTypes/ipc/wallet"
 import { JsonAesLevelStorage } from "app/main/subsystems/jsonAesLevel"
 import {
   ExtendedKey,

@@ -14,7 +14,7 @@ import WalletSelection from "app/renderer/ui/components/loginForm/steps/walletSe
 import WalletPasswordRequest from "app/renderer/ui/components/loginForm/steps/walletPasswordRequest"
 import { Services } from "app/renderer/services"
 import * as api from "app/renderer/api"
-import { getWalletErrorMessages, GetWalletResponse } from "app/common/runtimeTypes/ipc/wallets"
+import { getWalletErrorMessages, GetWalletResponse } from "app/common/runtimeTypes/ipc/wallet"
 
 import * as urls from "app/renderer/constants/urls"
 import { extendWalletData } from "app/renderer/prefilledWallet"

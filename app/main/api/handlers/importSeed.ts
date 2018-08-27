@@ -4,7 +4,7 @@ import {
   importSeedErrors,
   ImportSeedParams,
   ImportSeedResponse
-} from "app/common/runtimeTypes/ipc/wallets"
+} from "app/common/runtimeTypes/ipc/seed"
 import { JsonSerializable } from "app/common/serializers"
 import { AppStateManager } from "app/main/appState"
 import * as mnemonic from "app/main/crypto/mnemonic"

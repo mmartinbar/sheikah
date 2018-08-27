@@ -48,7 +48,7 @@ export const GenerateAddressResponse = t.taggedUnion(
 )
 export type GenerateAddressResponse = t.TypeOf<typeof GenerateAddressResponse>
 
-/** Factory function for `GenerateAddressError` */
+/** Factory function for GenerateAddressError */
 export function buildGenerateAddressError(error: t.LiteralType<GenerateAddressErrors>) {
   const addressError: GenerateAddressError = { kind: "ERROR", error: error.value }
 

@@ -1,7 +1,7 @@
 import { newMnemonics } from "app/main/api/handlers"
 import { AppStateManager } from "app/main/appState"
 import { asRuntimeType } from "app/common/runtimeTypes"
-import { NewMnemonicsSuccess } from "app/common/runtimeTypes/storage/wallets"
+import { NewMnemonicsSuccess } from "app/common/runtimeTypes/ipc/seed"
 
 jest.mock("app/main/crypto/mnemonic", () => {
   return {

@@ -26,36 +26,6 @@ export const WalletInfos = t.intersection([
 ])
 export type WalletInfos = t.TypeOf<typeof WalletInfos>
 
-export const Mnemonics = t.type({
-  mnemonics: t.string
-})
-export type Mnemonics = t.TypeOf<typeof Mnemonics>
-
-export const NewMnemonicsSuccess = t.intersection([
-  t.type({ kind: t.literal("SUCCESS") }),
-  Mnemonics
-])
-export type NewMnemonicsSuccess = t.TypeOf<typeof NewMnemonicsSuccess>
-
-export const newMnemonicsErrors = {
-  GENERIC_ERROR: t.literal("GENERIC_ERROR"),
-  DEPENDENCY_ERROR_GENERATE_MNEMONICS: t.literal("DEPENDENCY_ERROR_GENERATE_MNEMONICS"),
-  INVALID_MNEMONICS_TYPE: t.literal("INVALID_MNEMONICS_TYPE"),
-  ERROR_UPDATING_UNCONSOLIDATED_WALLET: t.literal("ERROR_UPDATING_UNCONSOLIDATED_WALLET")
-}
-
-export const NewMnemonicsErrors = t.union(Object.values(newMnemonicsErrors))
-export type NewMnemonicsErrors = t.TypeOf<typeof NewMnemonicsErrors>
-
-export const NewMnemonicsError = t.type({
-  kind: t.literal("ERROR"),
-  error: NewMnemonicsErrors
-})
-export type NewMnemonicsError = t.TypeOf<typeof NewMnemonicsError>
-
-export const NewMnemonicsResponse = t.taggedUnion("kind", [NewMnemonicsSuccess, NewMnemonicsError])
-export type NewMnemonicsResponse = t.TypeOf<typeof NewMnemonicsResponse>
-
 export const Outpoint = t.type({
   txid: t.string,
   index: t.number // output index

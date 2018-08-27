@@ -1,4 +1,4 @@
-import { ImportSeedError } from "app/common/runtimeTypes/ipc/wallets"
+import { ImportSeedError } from "app/common/runtimeTypes/ipc/seed"
 import { importSeed } from "app/main/api/handlers"
 import { AppStateManager } from "app/main/appState"
 import { AppStateS } from "app/main/system"

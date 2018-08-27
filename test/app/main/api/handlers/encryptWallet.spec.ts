@@ -1,6 +1,6 @@
 import { encryptWallet } from "app/main/api/handlers"
 import { AppStateS, WalletStorageS, AppStorageS } from "app/main/system"
-import { EncryptWalletSuccess } from "app/common/runtimeTypes/ipc/wallets"
+import { EncryptWalletSuccess } from "app/common/runtimeTypes/ipc/wallet"
 import { asRuntimeType } from "app/common/runtimeTypes"
 import { WalletInfos } from "app/common/runtimeTypes/storage/wallets"
 import * as fixture from "./encryptWalletFixtures"

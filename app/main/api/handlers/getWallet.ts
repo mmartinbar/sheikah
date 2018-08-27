@@ -7,7 +7,7 @@ import {
   GetWalletParams, GetWalletResponse,
   GetWalletSuccess, getWalletErrors,
   buildGetWalletError
-} from "app/common/runtimeTypes/ipc/wallets"
+} from "app/common/runtimeTypes/ipc/wallet"
 import { JsonAesLevelStorage } from "app/main/subsystems/jsonAesLevel"
 
 /**

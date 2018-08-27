@@ -7,7 +7,7 @@ import {
   NewMnemonicsResponse,
   newMnemonicsErrors,
   NewMnemonicsErrors
-} from "app/common/runtimeTypes/storage/wallets"
+} from "app/common/runtimeTypes/ipc/seed"
 
 /**
  * request the new mnemonics through the API Client

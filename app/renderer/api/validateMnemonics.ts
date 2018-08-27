@@ -7,7 +7,7 @@ import {
 } from "app/main/api/handlers/importSeed"
 import {
   ImportSeedResponse, importSeedErrors, ImportSeedErrors, ImportSeedParams
-} from "app/common/runtimeTypes/ipc/wallets"
+} from "app/common/runtimeTypes/ipc/seed"
 
 /**
  * Validate mnemonics

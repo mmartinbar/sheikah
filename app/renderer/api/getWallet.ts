@@ -7,7 +7,7 @@ import {
   getWalletErrors,
   GetWalletErrors,
   buildGetWalletError
-} from "app/common/runtimeTypes/ipc/wallets"
+} from "app/common/runtimeTypes/ipc/wallet"
 
 /**
  * Function to request the unlock of a wallet through the API Client

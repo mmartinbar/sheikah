@@ -1,8 +1,13 @@
 import log from "app/common/logging"
 import {
-  encryptWalletErrors, importSeedErrors, ImportSeedResponse,
-} from "app/common/runtimeTypes/ipc/wallets"
-import { newMnemonicsErrors, WalletInfos } from "app/common/runtimeTypes/storage/wallets"
+  encryptWalletErrors,
+} from "app/common/runtimeTypes/ipc/wallet"
+import {
+  newMnemonicsErrors,
+  importSeedErrors,
+  ImportSeedResponse
+} from "app/common/runtimeTypes/ipc/seed"
+import { WalletInfos } from "app/common/runtimeTypes/storage/wallets"
 
 import { assertNever } from "app/common/utils"
 import { IAction } from "app/renderer/actions/helpers"

@@ -1,6 +1,6 @@
 import { Cipher } from "app/main/ciphers/index"
 import { Wallet, CURRENT_WALLET_VERSION, Seed } from "app/common/runtimeTypes/storage/wallets"
-import { EncryptWalletParams } from "app/common/runtimeTypes/ipc/wallets"
+import { EncryptWalletParams } from "app/common/runtimeTypes/ipc/wallet"
 import { WalletStorage } from "app/main/subsystems/wallets"
 import { JsonSerializable } from "app/common/serializers/json"
 import { AesCipher, AesCipherSettings, defaultAesCipherSettings } from "app/main/ciphers/aes"
